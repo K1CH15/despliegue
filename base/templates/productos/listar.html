@@ -104,6 +104,7 @@
                                 </div>
                                 <!-- /.card-body -->
                             </div>
+                                <a href="{% url 'productos-crear' %}" class="btn btn-success w-25 boton-crear-posicion bi bi-tags"> Crear {{ titulo }}</a>
                             <!-- /.card -->
                         </div>
                         <!-- /.col -->
@@ -113,7 +114,7 @@
                 <!-- /.container-fluid -->
         </section>
         <!-- /.content -->
-        <a href="{% url 'productos-crear' %}" class="btn btn-success w-25">Crear {{ titulo }}</a>
+
     </div>
 
 {% endblock contenido %}

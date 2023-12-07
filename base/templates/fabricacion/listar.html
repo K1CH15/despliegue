@@ -30,7 +30,7 @@
                                             <th>Fecha</th>
                                             <th>Cantidad Producto</th>
                                             <th>Producto</th>
-                                            <th>Costo Fabricacion</th>
+                                            <th>Costo de Fabricacion</th>
 
                                             <th>Acción</th>
 
@@ -70,8 +70,8 @@
                                         <tr>
                                             <th>Fecha</th>
                                             <th>Cantidad Producto</th>
-                                            <th>Costo Fabricacion</th>
                                             <th>Producto</th>
+                                            <th>Costo de Fabricacion</th>
                                             <th>Acción</th>
                                         </tr>
                                         </tfoot>
@@ -79,6 +79,7 @@
                                 </div>
                                 <!-- /.card-body -->
                             </div>
+                        <a href="{% url 'fabricaciones-crear' %}" class="btn boton-crear-posicion btn-success w-25  "><span class="fas fa-industry"></span> Crear {{ titulo }}</a>
                             <!-- /.card -->
                         </div>
                         <!-- /.col -->
@@ -88,6 +89,6 @@
                 <!-- /.container-fluid -->
         </section>
         <!-- /.content -->
-        <a href="{% url 'fabricaciones-crear' %}" class="btn btn-success w-25">Crear {{ titulo }}</a>
+
     </div>
 {% endblock contenido %}

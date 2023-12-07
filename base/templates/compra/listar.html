@@ -21,12 +21,14 @@
                         <div class="card">
                             <div class="card-header">
                                 <h3 class="card-title">{{ titulo }}</h3>
+
                             </div>
 
                             <!-- /.card-header -->
                             <div class="card-body">
                                 <div class="table-responsive">
                                     <table id="example1" class="table table-bordered table-striped">
+
                                         <thead>
                                         <tr>
                                             <th>°N de Registro</th>
@@ -37,6 +39,7 @@
                                             <th>Acción</th>
                                         </tr>
                                         </thead>
+
                                         <tbody>
                                         {% for compra in compra %}
 
@@ -47,17 +50,17 @@
                                                 <td>{{ compra.persona_proveedor }}</td>
                                                 <td>
 
-                                                {% if compra.estado == '1' %}
-                                                    <a class="btn btn-primary btn-md bi bi-wrench m-1 me-1 isabled"
-                                                       href="{% url 'detalle_compra' compra.id %}">Modificar</a>
+                                                    {% if compra.estado == '1' %}
+                                                        <a class="btn btn-primary btn-md bi bi-wrench m-1 me-1 isabled"
+                                                           href="{% url 'detalle_compra' compra.id %}">Modificar</a>
 
-                                                {% else %}
-                                                    <a class="btn btn-success btn-md m-1 me-1 toggle-eye "
-                                                       onclick="toggleVisibility()"
-                                                       href="{% url 'verr_contenido' compra.id %}">
-                                                        <i id="eye-icon" class="fas fa-eye"></i> Ver
-                                                    </a>
-                                                {% endif %}
+                                                    {% else %}
+                                                        <a class="btn btn-success btn-md m-1 me-1 toggle-eye "
+                                                           onclick="toggleVisibility()"
+                                                           href="{% url 'verr_contenido' compra.id %}">
+                                                            <i id="eye-icon" class="fas fa-eye"></i> Ver
+                                                        </a>
+                                                    {% endif %}
                                                 </td>
                                             </tr>
 
@@ -76,8 +79,9 @@
                                 </div>
                                 <!-- /.card-body -->
                             </div>
-                            <a href="{% url 'compra-crear' %}" class="btn btn-success w-25">Crear {{ titulo }}</a>
-
+                            <a href="{% url 'compra-crear' %}"
+                               class="boton-crear-posicion btn btn-success w-25 bi bi-bag">
+                                Crear {{ titulo }}</a>
 
                             <!-- /.card -->
                         </div>

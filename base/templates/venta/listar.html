@@ -25,7 +25,7 @@
                                     <table id="example1" class="table table-bordered table-striped">
                                         <thead>
                                         <tr>
-                                            <th>Id</th>
+                                            <th>°N de Registro</th>
                                             <th>Fecha</th>
                                             <th>Vendedor</th>
                                             <th>Cliente</th>
@@ -57,7 +57,7 @@
                                         </tbody>
                                         <tfoot>
                                         <tr>
-                                            <th>Id</th>
+                                            <th>°N de Registro</th>
                                             <th>Fecha</th>
                                             <th>Valor Total</th>
                                             <th>Estado</th>
@@ -67,7 +67,9 @@
                                     </table>
                                 </div>
                                 <!-- /.card-body -->
+
                             </div>
+                                                            <a href="{% url 'ventas-crear' %}" class="boton-crear-posicion  btn btn-success w-25 bi bi-cart-check"> Crear {{ titulo }}</a>
                             <!-- /.card -->
                         </div>
                         <!-- /.col -->
@@ -77,6 +79,6 @@
                 <!-- /.container-fluid -->
         </section>
         <!-- /.content -->
-        <a href="{% url 'ventas-crear' %}" class="btn btn-success w-25">Crear {{ titulo }}</a>
+
     </div>
 {% endblock contenido %}
