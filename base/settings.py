@@ -27,7 +27,7 @@ mimetypes.add_type("text/css", ".css", True)
 SECRET_KEY = 'django-insecure-ac3ry3hntr5(lg86t5%%9wwxznr6+6fa1dj*=l5ee%r)!!k!%k'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['*']
 
@@ -62,6 +62,7 @@ THIRD_PARTY_APPS = [
     'django_dump_load_utf8',
     'django_seed',
     'django_select2',
+
 ]
 
 INSTALLED_APPS = DJANGO_APPS + THIRD_PARTY_APPS + LOCAL_APPS
