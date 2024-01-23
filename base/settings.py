@@ -29,7 +29,7 @@ SECRET_KEY = 'django-insecure-ac3ry3hntr5(lg86t5%%9wwxznr6+6fa1dj*=l5ee%r)!!k!%k
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['sena.monguarte.com']
+ALLOWED_HOSTS = ['143.198.9.52:8000']
 
 # Application definition
 
